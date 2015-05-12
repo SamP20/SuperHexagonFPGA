@@ -1,0 +1,15 @@
+module sincos_tb()
+reg [9:0]angle;
+wire signed [10:0]sin;
+
+initial begin
+	#0 angle = 10'd0;
+	#10 angle = 10'd256;
+	#10 angle = 10'd512;
+	#10 angle = 10'd768;
+	#10 angle = 10'd67;
+	#10 angle = 10'd998;
+	
+end
+
+endmodule

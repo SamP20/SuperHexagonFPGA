@@ -1,0 +1,48 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do SuperHexagon_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Mike/Dropbox/EN3051/SuperHexagon {C:/Users/Mike/Dropbox/EN3051/SuperHexagon/random_gen.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module random_gen
+# 
+# Top level modules:
+# 	random_gen
+# vlog -vlog01compat -work work +incdir+C:/Users/Mike/Dropbox/EN3051/SuperHexagon {C:/Users/Mike/Dropbox/EN3051/SuperHexagon/random_gen_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module random_gen_tb
+# 
+# Top level modules:
+# 	random_gen_tb
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Mike/Dropbox/EN3051/SuperHexagon {C:/Users/Mike/Dropbox/EN3051/SuperHexagon/random_gen_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module random_gen_tb
+# 
+# Top level modules:
+# 	random_gen_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  random_gen_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps random_gen_tb 
+# Loading work.random_gen_tb
+# Loading work.random_gen
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./SuperHexagon_run_msim_rtl_verilog.do PAUSED at line 18
+add wave -position end  sim:/random_gen_tb/out

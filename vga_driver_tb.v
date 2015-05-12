@@ -1,0 +1,36 @@
+`timescale 1ns/100ps
+// Testbench for vga_driver.v
+module vga_driver_tb();
+
+reg dclk;
+reg clr;
+wire hsync;
+wire vsync;
+wire [3:0]red_o;
+wire [3:0]green_o;
+wire [3:0]blue_o;
+
+wire clk;
+wire [9:0]x;
+wire [9:0]y;
+reg [3:0]red;
+reg [3:0]green;
+reg [3:0]blue;
+
+wire frame_clk;
+
+initial begin
+	red = 4'd7;
+	green = 4'd8;
+	blue = 4'd3;
+	clr = 0;
+	dclk = 0;
+end
+
+always begin
+	#20 dclk = ~dclk;
+end
+
+vga_driver vga_driver(dclk,clr,hsync,vsync,red_o,green_o,blue_o,clk,x,y,red,green,blue,frame_clk);
+
+endmodule

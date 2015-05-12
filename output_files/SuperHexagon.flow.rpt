@@ -1,0 +1,154 @@
+Flow report for SuperHexagon
+Wed May  6 21:45:08 2015
+Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Flow Summary                                                                       ;
++------------------------------------+-----------------------------------------------+
+; Flow Status                        ; Successful - Wed May  6 21:45:08 2015         ;
+; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; SuperHexagon                                  ;
+; Top-level Entity Name              ; SuperHexagon                                  ;
+; Family                             ; Cyclone II                                    ;
+; Device                             ; EP2C20F484C7                                  ;
+; Timing Models                      ; Final                                         ;
+; Total logic elements               ; 2,438 / 18,752 ( 13 % )                       ;
+;     Total combinational functions  ; 2,307 / 18,752 ( 12 % )                       ;
+;     Dedicated logic registers      ; 1,145 / 18,752 ( 6 % )                        ;
+; Total registers                    ; 1145                                          ;
+; Total pins                         ; 64 / 315 ( 20 % )                             ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 18,432 / 239,616 ( 8 % )                      ;
+; Embedded Multiplier 9-bit elements ; 12 / 52 ( 23 % )                              ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                ;
++------------------------------------+-----------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/06/2015 21:43:28 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; SuperHexagon        ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 88945707846686.143094500811638 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; root3_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; sincos_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; vga_driver_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; random_gen_tb  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; random_gen_tb                  ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; root3_tb.v                     ; --            ; --          ; root3_tb       ;
+; EDA_TEST_BENCH_FILE                  ; sincos_tb.v                    ; --            ; --          ; sincos_tb      ;
+; EDA_TEST_BENCH_FILE                  ; vga_driver_tb.v                ; --            ; --          ; vga_driver_tb  ;
+; EDA_TEST_BENCH_FILE                  ; random_gen_tb.v                ; --            ; --          ; random_gen_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; root3_tb                       ; --            ; --          ; root3_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; sincos_tb                      ; --            ; --          ; sincos_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; vga_driver_tb                  ; --            ; --          ; vga_driver_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; random_gen_tb                  ; --            ; --          ; random_gen_tb  ;
+; EDA_TEST_BENCH_NAME                  ; root3_tb                       ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; sincos_tb                      ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; vga_driver_tb                  ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; random_gen_tb                  ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 s                            ; --            ; --          ; vga_driver_tb  ;
+; EDA_TIME_SCALE                       ; 1 ps                           ; --            ; --          ; eda_simulation ;
+; IP_TOOL_NAME                         ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; ALTPLL                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 12.1                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 12.1                           ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                              ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_counter0.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_counter0_bb.v              ; --            ; --          ; --             ;
+; MISC_FILE                            ; alt_pll.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                            ; alt_pll_bb.v                   ; --            ; --          ; --             ;
+; MISC_FILE                            ; alt_pll.ppf                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                       ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                         ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                   ; --            ; --          ; --             ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 349 MB              ; 00:00:19                           ;
+; Fitter                    ; 00:00:41     ; 1.0                     ; 426 MB              ; 00:00:26                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 339 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 307 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 315 MB              ; 00:00:04                           ;
+; Total                     ; 00:01:22     ; --                      ; --                  ; 00:00:55                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; sam-PC           ; Linux Mint ; 17         ; x86_64         ;
+; Fitter                    ; sam-PC           ; Linux Mint ; 17         ; x86_64         ;
+; Assembler                 ; sam-PC           ; Linux Mint ; 17         ; x86_64         ;
+; TimeQuest Timing Analyzer ; sam-PC           ; Linux Mint ; 17         ; x86_64         ;
+; EDA Netlist Writer        ; sam-PC           ; Linux Mint ; 17         ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off SuperHexagon -c SuperHexagon
+quartus_fit --read_settings_files=off --write_settings_files=off SuperHexagon -c SuperHexagon
+quartus_asm --read_settings_files=off --write_settings_files=off SuperHexagon -c SuperHexagon
+quartus_sta SuperHexagon -c SuperHexagon
+quartus_eda --read_settings_files=off --write_settings_files=off SuperHexagon -c SuperHexagon
+
+
+

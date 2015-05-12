@@ -1,0 +1,219 @@
+Alternative open 1
+	walls[0] = 6'b011111;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b000000;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b111011;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b000000;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b011111;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b000000;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b111011;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b000000;
+	walls[15] = 6'b000000;
+	
+Alternative open 2
+	walls[0] = 6'b101111;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b000000;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b111101;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b000000;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b101111;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b000000;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b111101;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b000000;
+	walls[15] = 6'b000000;
+
+
+Alternative open 3
+	walls[0] = 6'b110111;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b000000;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b111110;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b000000;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b110111;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b000000;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b111110;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b000000;
+	walls[15] = 6'b000000;
+	
+Every other 1	
+	walls[0] = 6'b101010;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b010101;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b101010;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b010101;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b101010;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b010101;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b101010;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b010101;
+	walls[15] = 6'b000000;
+
+Every other 2
+	walls[0] = 6'b010101;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b101010;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b010101;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b101010;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b010101;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b101010;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b010101;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b101010;
+	walls[15] = 6'b000000;
+
+Random 1
+	walls[0] = 6'b101010;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b000000;
+	walls[3] = 6'b010101;
+	walls[4] = 6'b000000;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b101110;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b000000;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b011011;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b000000;
+	walls[13] = 6'b010101;
+	walls[14] = 6'b000000;
+	walls[15] = 6'b000000;
+
+
+	
+Rotating gap ccw maze
+	walls[0] = 6'b011111;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b101111;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b110111;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b111011;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b111101;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b111110;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b011111;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b101111;
+	walls[15] = 6'b000000;
+
+Rotating gap cw maze
+	walls[0] = 6'b111110;
+	walls[1] = 6'b000000;
+	walls[2] = 6'b111101;
+	walls[3] = 6'b000000;
+	walls[4] = 6'b111011;
+	walls[5] = 6'b000000;
+	walls[6] = 6'b110111;
+	walls[7] = 6'b000000;
+	walls[8] = 6'b101111;
+	walls[9] = 6'b000000;
+	walls[10] = 6'b011111;
+	walls[11] = 6'b000000;
+	walls[12] = 6'b111110;
+	walls[13] = 6'b000000;
+	walls[14] = 6'b111101;
+	walls[15] = 6'b000000;
+
+2 choice left right maze
+	walls[0] = 6'b110110;
+	walls[1] = 6'b100100;
+	walls[2] = 6'b101101;
+	walls[3] = 6'b100100;
+	walls[4] = 6'b110110;
+	walls[5] = 6'b100100;
+	walls[6] = 6'b101101;
+	walls[7] = 6'b100100;
+	walls[8] = 6'b110110;
+	walls[9] = 6'b100100;
+	walls[10] = 6'b101101;
+	walls[11] = 6'b100100;
+	walls[12] = 6'b110110;
+	walls[13] = 6'b100100;
+	walls[14] = 6'b101101;
+	walls[15] = 6'b000000;
+
+Constant rotate ccw maze
+	walls[0] = 6'b110110;
+	walls[1] = 6'b010010;
+	walls[2] = 6'b001001;
+	walls[3] = 6'b100100;
+	walls[4] = 6'b010010;
+	walls[5] = 6'b001001;
+	walls[6] = 6'b100100;
+	walls[7] = 6'b010010;
+	walls[8] = 6'b001001;
+	walls[9] = 6'b100100;
+	walls[10] = 6'b010010;
+	walls[11] = 6'b001001;
+	walls[12] = 6'b100100;
+	walls[13] = 6'b010010;
+	walls[14] = 6'b001001;
+	walls[15] = 6'b000000;
+
+Constant rotate cw maze	
+	walls[0] = 6'b110110;
+	walls[1] = 6'b100100;
+	walls[2] = 6'b001001;
+	walls[3] = 6'b010010;
+	walls[4] = 6'b100100;
+	walls[5] = 6'b001001;
+	walls[6] = 6'b010010;
+	walls[7] = 6'b100100;
+	walls[8] = 6'b001001;
+	walls[9] = 6'b010010;
+	walls[10] = 6'b100100;
+	walls[11] = 6'b001001;
+	walls[12] = 6'b010010;
+	walls[13] = 6'b100100;
+	walls[14] = 6'b001001;
+	walls[15] = 6'b000000;
+
+	
+Alternating maze
+	walls[0] = 6'b101111;
+	walls[1] = 6'b100000;
+	walls[2] = 6'b100000;
+	walls[3] = 6'b100000;
+	walls[4] = 6'b100000;
+	walls[5] = 6'b111110;
+	walls[6] = 6'b100000;
+	walls[7] = 6'b100000;
+	walls[8] = 6'b100000;
+	walls[9] = 6'b100000;
+	walls[10] = 6'b101111;
+	walls[11] = 6'b100000;
+	walls[12] = 6'b100000;
+	walls[13] = 6'b100000;
+	walls[14] = 6'b100000;
+	walls[15] = 6'b111110;

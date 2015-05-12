@@ -1,0 +1,65 @@
+module seven_seg(
+	input clk,
+	input reset,
+	output a,
+	output b,
+	output c,
+	output d,
+	output e,
+	output f,
+	output g,
+);
+
+reg [3:0]milli;
+reg [3:0]second;
+reg [3:0]ten;
+reg [3:0]hundred;
+
+reg [22:0] delay;
+
+always @(posedge clk) begin
+	if (reset)
+		delay <= 0;
+	else
+	delay <= delay + 1;
+end
+
+always @(posedge clk) begin
+	if (reset) begin
+		milli <= 0;
+		second <= 0;
+		ten <= 0;
+		hundered <= 0;
+	end
+	else begin 
+		if (milli == 4'd9) begin
+			milli <= 0;
+		end else begin
+			milli <= milli + 1;
+		end
+	
+	end
+	
+end
+
+reg [6:0] sseg;
+
+reg ss_display;
+
+always at (*) begin
+	case(sseg)
+		4'd0	:	ss_display = 7'b0000001;
+		4'd1	:	ss_display = 7'b1001111;
+		4'd2	:	ss_display = 7'b0010010;
+		4'd3	:	ss_display = 7'b0000110;
+		4'd4	:	ss_display = 7'b1001100;
+		4'd5	:	ss_display = 7'b0100100;
+		4'd6	:	ss_display = 7'b0100000;
+		4'd7	:	ss_display = 7'b0001111;
+		4'd8	:	ss_display = 7'b0000000;
+		4'd9	:	ss_display = 7'b0000100;
+		default	:	ss_display = 7'b0000000;
+	endcase 
+end
+
+endmodule

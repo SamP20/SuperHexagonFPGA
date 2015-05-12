@@ -1,0 +1,49 @@
+Quartus II Archive log --	/home/sam/Dropbox/EN3051/SuperHexagon/output_files/SuperHexagon.qarlog
+
+Archive:	/home/sam/Dropbox/EN3051/SuperHexagon/output_files/SuperHexagon.qar
+Date:		Wed May  6 21:46:45 2015
+Quartus II 32-bit		12.1 Build 243 01/31/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+/home/sam/Dropbox/EN3051/SuperHexagon/SuperHexagon.bdf
+/home/sam/Dropbox/EN3051/SuperHexagon/SuperHexagon.qpf
+/home/sam/Dropbox/EN3051/SuperHexagon/SuperHexagon.qsf
+/home/sam/Dropbox/EN3051/SuperHexagon/SuperHexagon_assignment_defaults.qdf
+/home/sam/Dropbox/EN3051/SuperHexagon/alt_pll.bsf
+/home/sam/Dropbox/EN3051/SuperHexagon/alt_pll.ppf
+/home/sam/Dropbox/EN3051/SuperHexagon/alt_pll.qip
+/home/sam/Dropbox/EN3051/SuperHexagon/alt_pll.v
+/home/sam/Dropbox/EN3051/SuperHexagon/alt_pll_bb.v
+/home/sam/Dropbox/EN3051/SuperHexagon/centre_coords.v
+/home/sam/Dropbox/EN3051/SuperHexagon/circle.v
+/home/sam/Dropbox/EN3051/SuperHexagon/colourful.v
+/home/sam/Dropbox/EN3051/SuperHexagon/compare_coords.v
+/home/sam/Dropbox/EN3051/SuperHexagon/counter.v
+/home/sam/Dropbox/EN3051/SuperHexagon/difficulty.v
+/home/sam/Dropbox/EN3051/SuperHexagon/drawing.v
+/home/sam/Dropbox/EN3051/SuperHexagon/game.v
+/home/sam/Dropbox/EN3051/SuperHexagon/hex_to_colour.v
+/home/sam/Dropbox/EN3051/SuperHexagon/incremental_db/compiled_partitions/SuperHexagon.db_info
+/home/sam/Dropbox/EN3051/SuperHexagon/lpm_counter0.bsf
+/home/sam/Dropbox/EN3051/SuperHexagon/lpm_counter0.qip
+/home/sam/Dropbox/EN3051/SuperHexagon/lpm_counter0.v
+/home/sam/Dropbox/EN3051/SuperHexagon/lpm_counter0_bb.v
+/home/sam/Dropbox/EN3051/SuperHexagon/player.v
+/home/sam/Dropbox/EN3051/SuperHexagon/random_gen.v
+/home/sam/Dropbox/EN3051/SuperHexagon/random_gen_tb.v
+/home/sam/Dropbox/EN3051/SuperHexagon/rect_to_hex.v
+/home/sam/Dropbox/EN3051/SuperHexagon/rotate.v
+/home/sam/Dropbox/EN3051/SuperHexagon/seven_seg.v
+/home/sam/Dropbox/EN3051/SuperHexagon/sincos.v
+/home/sam/Dropbox/EN3051/SuperHexagon/sincos_tb.v
+/home/sam/Dropbox/EN3051/SuperHexagon/sintable.txt
+/home/sam/Dropbox/EN3051/SuperHexagon/spin_controller.v
+/home/sam/Dropbox/EN3051/SuperHexagon/vga_driver.v
+/home/sam/Dropbox/EN3051/SuperHexagon/vga_driver_tb.v
+/home/sam/Dropbox/EN3051/SuperHexagon/wall_generator.v
+/home/sam/Dropbox/EN3051/SuperHexagon/wall_types.txt
+/home/sam/Dropbox/EN3051/SuperHexagon/walls.v
+	======= Total: 38 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at rect_to_hex.v(28): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at spin_controller.v(23): always construct contains both blocking and non-blocking assignments

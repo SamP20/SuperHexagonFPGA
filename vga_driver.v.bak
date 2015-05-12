@@ -1,0 +1,72 @@
+module vga_driver(
+	input wire dclk,
+	input wire clr,
+	output wire hsync,
+	output wire vsync,
+	output reg [3:0]red_o,
+	output reg [3:0]green_o,
+	output reg [3:0]blue_o,
+	
+	output wire clk,
+	output reg [9:0]x,
+	output reg [9:0]y,
+	input wire [3:0]red,
+	input wire [3:0]green,
+	input wire [3:0]blue
+);
+
+parameter pipeline_dly = 2;
+parameter hpixels = 800;// horizontal pixels per line
+parameter vlines = 521; // vertical lines per frame
+parameter hpulse = 96; 	// hsync pulse length
+parameter vpulse = 2; 	// vsync pulse length
+parameter hbp = 144; 	// end of horizontal back porch
+parameter hfp = 784; 	// beginning of horizontal front porch
+parameter vbp = 31; 		// end of vertical back porch
+parameter vfp = 511; 	// beginning of vertical front porch
+// active horizontal video is therefore: 784 - 144 = 640
+// active vertical video is therefore: 511 - 31 = 480
+
+// registers for storing the horizontal & vertical counters
+reg [9:0] hc;
+reg [9:0] vc;
+wire in_frame;
+
+assign clk = dclk;
+
+always @(posedge dclk or posedge clr)
+begin
+	if(clr == 1)
+	begin
+		hc <= 0;
+		vc <= 0;
+	end
+	else
+	begin
+		if(hc < hpixels -1)
+			hc <= hc + 1;
+		else
+		begin
+			hc <= 0;
+			if(vc < vlines - 1)
+				vc <= vc + 1;
+			else
+				vc <= 0;
+			end
+		end
+	end
+end
+
+assign hsync = (hc < hpulse) ? 0:1;
+assign vsync = (vc < vpulse) ? 0:1;
+
+assign in_frame = (vc >= vbp && vc < vfp) && (hc >= hbp && hc < (hbp+640))
+
+always @(posedge dclk)
+begin
+	red_o <= red & in_frame;
+	green_o <= green & in_frame;
+	blue_o <= blue & in_frame;
+end
+
+endmodule

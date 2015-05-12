@@ -1,0 +1,168 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Edition
+# Date created = 20:36:23  February 26, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		SuperHexagon_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY SuperHexagon
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.1 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:36:23  FEBRUARY 26, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "12.1 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_B11 -to vsync
+set_location_assignment PIN_D9 -to r[0]
+set_location_assignment PIN_C9 -to r[1]
+set_location_assignment PIN_B10 -to b[3]
+set_location_assignment PIN_A10 -to b[2]
+set_location_assignment PIN_D11 -to b[1]
+set_location_assignment PIN_A9 -to b[0]
+set_location_assignment PIN_A8 -to g[3]
+set_location_assignment PIN_B9 -to g[2]
+set_location_assignment PIN_C10 -to g[1]
+set_location_assignment PIN_B8 -to g[0]
+set_location_assignment PIN_A11 -to hsync
+set_location_assignment PIN_B7 -to r[3]
+set_location_assignment PIN_A7 -to r[2]
+set_location_assignment PIN_L1 -to dclk
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH random_gen_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME root3_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id root3_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME root3_tb -section_id root3_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME sincos_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id sincos_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME sincos_tb -section_id sincos_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME vga_driver_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id vga_driver_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME vga_driver_tb -section_id vga_driver_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 s" -section_id vga_driver_tb
+set_location_assignment PIN_R22 -to cw_btn
+set_location_assignment PIN_R21 -to ccw_btn
+set_global_assignment -name EDA_TEST_BENCH_FILE root3_tb.v -section_id root3_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE sincos_tb.v -section_id sincos_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE vga_driver_tb.v -section_id vga_driver_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME random_gen_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id random_gen_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME random_gen_tb -section_id random_gen_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE random_gen_tb.v -section_id random_gen_tb
+set_location_assignment PIN_T21 -to newgame
+set_location_assignment PIN_R20 -to gameover
+set_global_assignment -name VERILOG_FILE seven_seg.v
+set_global_assignment -name TEXT_FILE wall_types.txt
+set_global_assignment -name VERILOG_FILE vga_driver.v
+set_global_assignment -name BDF_FILE SuperHexagon.bdf
+set_global_assignment -name VERILOG_FILE colourful.v
+set_global_assignment -name VERILOG_FILE centre_coords.v
+set_global_assignment -name VERILOG_FILE circle.v
+set_global_assignment -name VERILOG_FILE rect_to_hex.v
+set_global_assignment -name VERILOG_FILE hex_to_colour.v
+set_global_assignment -name VERILOG_FILE walls.v
+set_global_assignment -name VERILOG_FILE drawing.v
+set_global_assignment -name VERILOG_FILE sincos.v
+set_global_assignment -name VERILOG_FILE sincos_tb.v
+set_global_assignment -name VERILOG_FILE player.v
+set_global_assignment -name VERILOG_FILE compare_coords.v
+set_global_assignment -name TEXT_FILE sintable.txt
+set_global_assignment -name VERILOG_FILE vga_driver_tb.v
+set_global_assignment -name VERILOG_FILE random_gen.v
+set_global_assignment -name VERILOG_FILE random_gen_tb.v
+set_global_assignment -name VERILOG_FILE wall_generator.v
+set_global_assignment -name VERILOG_FILE game.v
+set_global_assignment -name VERILOG_FILE rotate.v
+set_global_assignment -name VERILOG_FILE counter.v
+set_location_assignment PIN_J2 -to millis[0]
+set_location_assignment PIN_E2 -to millis[6]
+set_location_assignment PIN_F1 -to millis[5]
+set_location_assignment PIN_F2 -to millis[4]
+set_location_assignment PIN_H1 -to millis[3]
+set_location_assignment PIN_H2 -to millis[2]
+set_location_assignment PIN_J1 -to millis[1]
+set_location_assignment PIN_D1 -to secs[6]
+set_location_assignment PIN_D2 -to secs[5]
+set_location_assignment PIN_G3 -to secs[4]
+set_location_assignment PIN_H4 -to secs[3]
+set_location_assignment PIN_H5 -to secs[2]
+set_location_assignment PIN_H6 -to secs[1]
+set_location_assignment PIN_E1 -to secs[0]
+set_location_assignment PIN_D3 -to tens[6]
+set_location_assignment PIN_E4 -to tens[5]
+set_location_assignment PIN_E3 -to tens[4]
+set_location_assignment PIN_C1 -to tens[3]
+set_location_assignment PIN_C2 -to tens[2]
+set_location_assignment PIN_G6 -to tens[1]
+set_location_assignment PIN_G5 -to tens[0]
+set_location_assignment PIN_D4 -to hundreds[6]
+set_location_assignment PIN_F3 -to hundreds[5]
+set_location_assignment PIN_L8 -to hundreds[4]
+set_location_assignment PIN_J4 -to hundreds[3]
+set_location_assignment PIN_D6 -to hundreds[2]
+set_location_assignment PIN_D5 -to hundreds[1]
+set_location_assignment PIN_F4 -to hundreds[0]
+set_global_assignment -name VERILOG_FILE spin_controller.v
+set_location_assignment PIN_R17 -to gameover[9]
+set_location_assignment PIN_R18 -to gameover[8]
+set_location_assignment PIN_U18 -to gameover[7]
+set_location_assignment PIN_Y18 -to gameover[6]
+set_location_assignment PIN_V19 -to gameover[5]
+set_location_assignment PIN_T18 -to gameover[4]
+set_location_assignment PIN_Y19 -to gameover[3]
+set_location_assignment PIN_U19 -to gameover[2]
+set_location_assignment PIN_R19 -to gameover[1]
+set_location_assignment PIN_Y21 -to playing[7]
+set_location_assignment PIN_Y22 -to playing[6]
+set_location_assignment PIN_W21 -to playing[5]
+set_location_assignment PIN_W22 -to playing[4]
+set_location_assignment PIN_V21 -to playing[3]
+set_location_assignment PIN_V22 -to playing[2]
+set_location_assignment PIN_U21 -to playing[1]
+set_location_assignment PIN_U22 -to playing[0]
+set_global_assignment -name VERILOG_FILE difficulty.v
+set_location_assignment PIN_L22 -to select[0]
+set_location_assignment PIN_L21 -to select[1]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE alt_pll.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
